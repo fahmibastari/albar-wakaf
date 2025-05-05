@@ -1,0 +1,240 @@
+/* Custom Scrollbar untuk Webkit (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #111;
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #000000;
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #888;
+  }
+  
+  /* Scrollbar Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #555 #111;
+  }
+  
+      body {
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+        background-color: #000000;
+        color: white;
+      }
+  
+      header {
+        background: white;
+        color: #000;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25); /* Lebih jelas */
+        position: sticky;
+        top: 0;
+        z-index: 999; /* biar tetap di atas konten lain */
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+    footer i {
+        min-width: 24px; /* agar ikon rata kiri walau bentuknya beda */
+        text-align: center;
+      }
+      
+      .accordion-wrapper {
+        max-width: 1180px;
+        margin: 0 auto;
+      }
+      
+      header .title {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 1.2;
+      }
+  
+      .nav-left {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 1.2;
+      }
+  
+      nav {
+        display: flex;
+        gap: 50px;
+      }
+  
+      .nav-item {
+        position: relative;
+      }
+  
+      .nav-link {
+        text-decoration: none;
+        color: #838383;
+        cursor: pointer;
+      }
+  
+      .dropdown {
+        position: absolute;
+        top: calc(100% + 5px);
+        left: 0;
+        background: #222;
+        padding: 10px 0;
+        display: none;
+        min-width: 200px;
+        border-radius: 10px;
+        z-index: 1000;
+        transition: opacity 0.2s ease;
+        opacity: 0;
+        pointer-events: none;
+      }
+      
+  
+      .dropdown a {
+        display: block;
+        padding: 10px 20px;
+        color: white;
+        text-decoration: none;
+      }
+  
+      .dropdown a:hover {
+        background-color: #333;
+      }
+  
+      .nav-item:hover .dropdown {
+        display: block;
+        opacity: 1;
+        pointer-events: auto;
+      }
+  
+      /* Optional container content */
+      .container {
+        padding: 40px;
+        text-align: center;
+      }
+  
+      .container {
+        max-width: 960px;
+        margin: 30px auto;
+        padding: 20px;
+        /* background: #000; */
+        display: flex;
+        justify-content: center;
+      }
+  
+      .container img {
+        max-width: 90%;
+        height: auto;
+        border-radius: 25px;
+      }
+      .accordion {
+        background-color: #1e1e1e;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        overflow: hidden;
+      }
+  
+      .accordion-header {
+        padding: 20px;
+        cursor: pointer;
+        background-color: #e5e5e5;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+  
+      .accordion-header:hover {
+        background-color: #ffd726;
+        transition: background 0.3s;
+      }
+  
+      .accordion-content {
+        display: none;
+        padding: 20px;
+        background-color: #fff;
+        border-top: 1px solid #fff;
+      }
+  
+      .accordion.active .accordion-content {
+        display: block;
+      }
+  
+      .accordion h3 {
+        margin: 0;
+        font-size: 16px;
+      }
+  
+      .accordion-content p,
+      .accordion-content li {
+        font-size: 14px;
+        line-height: 1.6;
+      }
+  
+      .accordion-content strong {
+        display: block;
+        margin-top: 1em;
+        margin-bottom: 0.3em;
+        font-weight: bold;
+      }
+  
+      .formulir-button {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: #ffd726;
+        color: white;
+        border: none;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background 0.3s;
+      }
+  
+      .formulir-button:hover {
+        background-color: #bb9800;
+      }  
+
+      /* Responsive Navbar */
+#menuToggle {
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-menu {
+      flex-direction: column;
+      margin-top: 15px;
+      gap: 0;
+    }
+  
+    #menuToggle {
+      display: inline-block;
+    }
+  
+    .nav-menu.d-none {
+      display: none !important;
+    }
+  
+    .nav-menu.d-flex {
+      display: flex !important;
+    }
+  
+    .dropdown {
+      position: static;
+      opacity: 1 !important;
+      pointer-events: auto;
+      display: none;
+      background: transparent;
+      padding-left: 15px;
+    }
+  
+    .nav-item:hover .dropdown {
+      display: block;
+    }
+  }
+  
