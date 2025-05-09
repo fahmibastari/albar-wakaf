@@ -3,29 +3,60 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Wakaf</title>
+  <title>SILAWAK - Dashboard</title>
   <link rel="icon" type="image/x-icon" href="Logo_BPN-KemenATR_(2017).png">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-</head>
-<body style="background-color: #efeeee;">
-    <!-- Navbar Start -->
-<header class="px-4 py-3 bg-white shadow sticky-top rounded-bottom">
-    <div class="d-flex justify-content-between align-items-center">
-      <div class="d-flex align-items-center gap-2">
-        <img src="Logo_BPN-KemenATR_(2017).png" width="50" />
-        <div class="title text-dark fw-bold fs-6">
-          LAYANAN WAKAF<br />KANTOR PERTANAHAN KABUPATEN SUKOHARJO
-        </div>
-      </div>
+<style>
+  .custom-container {
+    max-width: 100% !important; /* Mengabaikan pengaturan .container Bootstrap */
+    padding: 20px; /* Menggunakan padding sesuai kebutuhan */
+  }
+  .d-flex {
+    align-items: center;
+  }
+
+  .d-flex i {
+    font-size: 1.5rem; /* Ukuran ikon lebih besar */
+  }
+
+  .d-flex div {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  /* Untuk memastikan ikon tidak terlalu besar pada perangkat kecil */
+  @media (max-width: 768px) {
+    .d-flex i {
+      font-size: 1.25rem; /* Ukuran ikon sedikit lebih kecil di perangkat kecil */
+    }
+
+    .d-flex div {
+      font-size: 0.875rem; /* Ukuran teks lebih kecil di perangkat kecil */
+    }
+  } 
   
-    <!-- Navigation menu -->
-    
-      <!-- Tambah item lainnya -->
-    </nav>
+</style>
+</head>
+<body style="background-color: #003d69;">
+    <!-- Navbar Start -->
+    <header class="px-4 py-3 bg-white shadow sticky-top rounded-bottom">
+      <div class="d-flex justify-content-between align-items-center">
+          <div class="d-flex align-items-center gap-2">
+              <img src="Logo_BPN-KemenATR_(2017).png" width="50" />
+              <div class="title">
+                  <span class="silawak">SILAWAK</span></span><br/>
+                  <span class="sistem-informasi">SISTEM INFORMASI LAYANAN WAKAF</span><br/>
+                  <span class="kantor">Kantor Pertanahan Kabupaten Sukoharjo</span>
+              </div>
+          </div>
+      </div>
   </header>
+  
+  
   
       
 
@@ -79,7 +110,7 @@
     <div class="accordion-content">
       <strong>Persyaratan</strong>
       <ul>
-        <li>Fotokopi identitas pemohon/nadzir (KTP,KK) dan kuasa apabila dikuasakan, yang telah dicocokkan dengan aslinya oleh petugas loket</li>
+        <li>Fotokopi identitas pemohon/nadzir (KTP,KK) dan kuasa apabila dikuasakan, yang telah dicocokkan dengan aslinya oleh petugas loket Surat Kuasa apabila dikuasakan</li>
         <li>Bukti alas hak/Garapan </li>
         <li>Akta Ikrar Wakaf/Surat Ikrar Wakaf</li>
         <li>Fotokopi SPPT PBB Tahun berjalan yang telah dicocokkan dengan aslinya oleh petugas loket</li>
@@ -147,87 +178,88 @@
   </div>
   </div>
 <br>
-  <footer class="bg-dark text-white pt-5 pb-4">
-    <div class="container">
-      <div class="row gy-4"> <!-- gy-4 = vertical gap antar row -->
-  
-        <!-- Kolom Logo dan Map -->
-<div class="col-lg-4 text-lg-start text-center">
-    <div class="d-flex align-items-center justify-content-lg-start justify-content-center mb-4">
-      <img src="Logo_BPN-KemenATR_(2017).png" alt="Logo" width="50" class="me-3">
-      <div class="text-start">
-        <div class="fw-bold text-warning">Kantor Pertanahan Kabupaten Sukoharjo</div>
-        <div class="small text-white">Melayani, Profesional, Terpercaya</div>
-      </div>
-    </div>
-    <div class="rounded overflow-hidden shadow-sm border">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3439.390783555075!2d110.835335!3d-7.654129!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a3c4180a8d4bd%3A0xebd0fd70aeef8a40!2sKantor%20Pertanahan%20Kabupaten%20Sukoharjo%20(ATR%2FBPN)!5e1!3m2!1sid!2sid!4v1746499445422!5m2!1sid!2sid"
-        width="100%" height="220" style="border:0;" allowfullscreen loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
+<footer class="bg-dark text-white pt-5 pb-4 custom-footer">
+  <div class="container custom-container">
+    <div class="row gy-4">
+
+      <!-- Kolom Logo dan Map -->
+<div class="col-lg-5 text-lg-start text-center">
+  <div class="d-flex align-items-center justify-content-lg-start justify-content-center mb-4">
+    <img src="Logo_BPN-KemenATR_(2017).png" alt="Logo" width="50" class="me-3">
+    <div class="text-start">
+      <div class="fw-bold text-warning">Kantor Pertanahan Kabupaten Sukoharjo</div>
+      <div class="small text-white">Melayani, Profesional, Terpercaya</div>
     </div>
   </div>
-  
-  
-        <!-- Kolom Informasi Kontak -->
-        <div class="col-lg-4 text-start">
-          <h5 class="fw-semibold mb-4">Informasi Kontak</h5>
-  
-          <div class="d-flex align-items-start mb-4">
-            <i class="fas fa-map-marker-alt fa-lg  me-3"></i>
-            <div>
-              <strong>Alamat</strong><br>
-              Jl. Jend. Sudirman No.310, Ngepeng, Sidorejo, Kec. Bendosari, Kabupaten Sukoharjo, Jawa Tengah 57527, Indonesia
-            </div>
-          </div>
-  
-          <div class="d-flex align-items-start mb-4">
-            <i class="fab fa-whatsapp fa-lg me-3"></i>
-            <div>
-              <strong>Whatsapp</strong><br>08112950121
-            </div>
-          </div>
-  
-          <div class="d-flex align-items-start mb-4">
-            <i class="fas fa-envelope fa-lg me-3"></i>
-            <div>
-              <strong>Email</strong><br>kantah_kabskhjo@yahoo.com
-            </div>
+  <div class="rounded overflow-hidden shadow-sm border">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3439.390783555075!2d110.835335!3d-7.654129!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a3c4180a8d4bd%3A0xebd0fd70aeef8a40!2sKantor%20Pertanahan%20Kabupaten%20Sukoharjo%20(ATR%2FBPN)!5e1!3m2!1sid!2sid!4v1746499445422!5m2!1sid!2sid"
+      width="100%" height="220" style="border:0;" allowfullscreen loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</div>
+
+      <!-- Kolom Informasi Kontak -->
+      <div class="col-lg-4 col-md-6 col-sm-12 text-start">
+        <h5 class="fw-semibold mb-4">Informasi Kontak</h5>
+      
+        <!-- Alamat -->
+        <div class="d-flex align-items-center mb-3">
+          <i class="fas fa-map-marker-alt fa-2x me-3"></i>
+          <div>
+            Jl. Jend. Sudirman No.310, Ngepeng, Sidorejo, Kec. Bendosari, Kabupaten Sukoharjo, Jawa Tengah 57527, Indonesia
           </div>
         </div>
-  
-        <!-- Kolom Sosial Media -->
-        <div class="col-lg-4 text-start">
-          <h5 class="fw-semibold mb-4">Sosial Media</h5>
-  
-          <div class="d-flex align-items-center mb-4">
-            <i class="fab fa-tiktok fa-lg me-3 text-white"></i>
-            <a href="https://www.tiktok.com/@kantah.kab.sukoharjo?is_from_webapp=1&sender_device=pc" target="_blank" class="text-white text-decoration-none">@kantah.kab.sukoharjo</a>
-          </div>
-          <div class="d-flex align-items-center mb-4">
-            <i class="fab fa-instagram fa-lg me-3 text-white"></i>
-            <a href="https://www.instagram.com/kantahkabsukoharjo/" target="_blank" class="text-white text-decoration-none">kantahkabsukoharjo</a>
-          </div>
-  
-          <div class="d-flex align-items-center mb-4">
-            <i class="fab fa-facebook fa-lg me-3 text-white"></i>
-            <a href="https://www.facebook.com/KantahKabSukoharjo?_rdr" target="_blank" class="text-white text-decoration-none">KantahKabSukoharjo</a>
-          </div>
-  
-          <div class="d-flex align-items-center mb-4">
-            <i class="fab fa-youtube fa-lg me-3 text-white"></i>
-            <a href="https://www.youtube.com/@kantahkabsukoharjo" target="_blank" class="text-white text-decoration-none">@kantahkabsukoharjo</a>
-          </div>
-  
-          <div class="d-flex align-items-center mb-4">
-            <i class="fab fa-x-twitter fa-lg me-3 text-white"></i>
-            <a href="https://www.youtube.com/@kantahkabsukoharjo" target="_blank" class="text-white text-decoration-none">kantahkabskhjo</a>
+      
+        <!-- WhatsApp -->
+        <div class="d-flex align-items-center mb-3">
+          <i class="fab fa-whatsapp fa-2x me-3"></i>
+          <div>
+            <a href="https://wa.me/08112950121" class="text-decoration-none text-white">08112950121</a>
           </div>
         </div>
-  
+      
+        <!-- Email -->
+        <div class="d-flex align-items-center mb-3">
+          <i class="fas fa-envelope fa-2x me-3"></i>
+          <div>
+            <a href="mailto:kantah_kabskhjo@yahoo.com" class="text-decoration-none text-white">kantah_kabskhjo@yahoo.com</a>
+          </div>
+        </div>
       </div>
+      
+      <!-- Kolom Sosial Media -->
+      <div class="col-lg-3 col-md-6 col-sm-12 text-start">
+        <h5 class="fw-semibold mb-4">Sosial Media</h5>
+        <div class="d-flex align-items-center mb-3">
+          <i class="fab fa-tiktok fa-lg me-3 text-white"></i>
+          <a href="https://www.tiktok.com/@kantah.kab.sukoharjo?is_from_webapp=1&sender_device=pc" target="_blank" class="text-white text-decoration-none">@kantah.kab.sukoharjo</a>
+        </div>
+        <div class="d-flex align-items-center mb-3">
+          <i class="fab fa-instagram fa-lg me-3 text-white"></i>
+          <a href="https://www.instagram.com/kantahkabsukoharjo/" target="_blank" class="text-white text-decoration-none">kantahkabsukoharjo</a>
+        </div>
+        <div class="d-flex align-items-center mb-3">
+          <i class="fab fa-facebook fa-lg me-3 text-white"></i>
+          <a href="https://www.facebook.com/KantahKabSukoharjo?_rdr" target="_blank" class="text-white text-decoration-none">KantahKabSukoharjo</a>
+        </div>
+        <div class="d-flex align-items-center mb-3">
+          <i class="fab fa-youtube fa-lg me-3 text-white"></i>
+          <a href="https://www.youtube.com/@kantahkabsukoharjo" target="_blank" class="text-white text-decoration-none">@kantahkabsukoharjo</a>
+        </div>
+        <div class="d-flex align-items-center mb-3">
+          <i class="fab fa-twitter fa-lg me-3 text-white"></i>
+          <a href="https://www.youtube.com/@kantahkabsukoharjo" target="_blank" class="text-white text-decoration-none">kantahkabskhjo</a>
+        </div>
+      </div>
+
     </div>
-  </footer>
+  </div>
+</footer>
+
+
+
+
   
   
 
