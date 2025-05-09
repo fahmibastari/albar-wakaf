@@ -148,10 +148,11 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        transition: background-color 0.3s ease;
       }
   
       .accordion-header:hover {
-        background-color: #ffd726;
+        background-color: #c4a43c;
         transition: background 0.3s;
       }
   
@@ -160,10 +161,14 @@
         padding: 20px;
         background-color: #fff;
         border-top: 1px solid #fff;
+        transition: max-height 0.3s ease, padding 0.3s ease;
+        
       }
   
       .accordion.active .accordion-content {
         display: block;
+        height: auto; /* Biarkan konten mengambil tinggi secara otomatis */
+        padding: 10px 20px; /* Memberikan padding saat membuka */
       }
   
       .accordion h3 {
@@ -188,7 +193,7 @@
         display: inline-block;
         margin-top: 20px;
         padding: 10px 20px;
-        background-color: #ffd726;
+        background-color: #c4a43c;
         color: white;
         border: none;
         text-decoration: none;
@@ -199,7 +204,31 @@
       .formulir-button:hover {
         background-color: #bb9800;
       }  
-
+      .title {
+        font-family: 'Arial', sans-serif;
+      }
+      
+      .silawak {
+        font-size: 20px; /* Ukuran besar untuk SILAWAK */
+        font-family: 'Segoe UI', sans-serif; /* Font yang berbeda */
+        font-weight: bold;
+      }
+      
+      .silawak .lawak {
+        color: #FFCD00; /* Kuning untuk LAWAK */
+      }
+      
+      .sistem-informasi {
+        font-size: 15px; /* Ukuran lebih kecil dari SILAWAK */
+        color: #003d69; /* Warna biru untuk SISTEM INFORMASI LAYANAN WAKAF */
+      }
+      
+      .kantor {
+        font-size: 15px; /* Ukuran lebih kecil untuk Kantor Pertanahan */
+        color: #FFCD00; /* Kuning untuk Kantor Pertanahan */
+        margin-top: -2px; 
+      }
+      
       /* Responsive Navbar */
 #menuToggle {
     display: none;
